@@ -1,0 +1,32 @@
+
+ <div>
+    <h1>product and customer Table </h1>
+    <table>
+       <thead>
+          <tr>
+             <th>_id</th> <br>
+             <th>UserName</th> <br>
+             <th>UserId</th> <br>
+             <th>email</th> <br>
+             <th>password</th> <br>
+             <th>phone</th> <br>
+             <th>address</th> <br>
+             <th>gender</th> <br>
+           
+          </tr>
+       </thead>
+       <tbody>
+          <tr *ngFor="let items of finduser">
+             <th>{{ items._id }}</th> <br>
+             <th>{{ items.UserName }}</th> <br>
+             <td>{{ items.UserId }}</td> <br>
+             <td>{{ items.email }}</td> <br>
+             <td>{{ items.password }}</td> <br>
+             <td>{{ items.phone }}</td> <br>
+             <td>{{ items.address }}</td> <br>
+             <td>{{ items.gender }}</td> <br>
+          </tr>
+       </tbody>
+    </table>
+ </div>
+ 
